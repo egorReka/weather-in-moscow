@@ -8,7 +8,7 @@ const WeatherContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  // min-height: 100vh;
+  width: 100%;
   padding: 20px;
   background-color: #f5f5f5;
 `;
