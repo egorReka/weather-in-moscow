@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { LoginPage } from './pages/Login';
 import { WeatherPage } from './pages/Weather';
 import { PrivateRoute } from './components/PrivateRoute';
