@@ -91,6 +91,14 @@ export const LoginPage: React.FC = () => {
           {isLoading ? 'Вход...' : 'Войти'}
         </Button>
         {error && <ErrorMessage>{error}</ErrorMessage>}
+
+        <div style={{ marginTop: 20, color: '#555', fontSize: 12, textAlign: 'start' }}>
+          Для тестового входа используйте:
+          <br />
+          <b>Email:</b> eve.holt@reqres.in
+          <br />
+          <b>Пароль:</b> cityslicka
+        </div>
       </LoginForm>
     </LoginContainer>
   );
