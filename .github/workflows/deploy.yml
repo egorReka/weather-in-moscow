@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version-file: 'package.json'
+          node-version: '18'
 
       - name: Install Dependencies
         run: npm install
@@ -37,5 +37,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifact_name: './dist'
